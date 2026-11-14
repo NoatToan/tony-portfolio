@@ -30,6 +30,8 @@ jobs:
 
   deploy:
     needs: check
+    # secrets are not available to fork PRs on a public repo
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     environment: ${{ github.event_name == 'push' && 'production' || 'preview' }}
     steps:

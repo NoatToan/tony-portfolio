@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Vendored house rules — never linted or modified.
+    ".claude/**",
   ]),
 ]);
 

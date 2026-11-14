@@ -1,10 +1,10 @@
-import { mobile } from "@/content";
-import { ogSize, renderOg } from "@/lib/og";
+import { OG_SIZE, renderOg } from '@/_modules/server/og/renderOg';
+import { mobileMock } from '@/_modules/server/content';
 
-export const alt = mobile.meta.title;
-export const size = ogSize;
-export const contentType = "image/png";
+export const alt = mobileMock.meta.title;
+export const size = OG_SIZE;
+export const contentType = 'image/png';
 
 export default function Image() {
-  return renderOg(mobile);
+  return renderOg(mobileMock);
 }

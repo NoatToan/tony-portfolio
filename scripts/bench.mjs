@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Measures the site and writes src/data/benchmark.json.
+ * Measures the site and writes src/_modules/server/benchmark/benchmark.json.
  *
  *   npm run bench                     # build stats + Lighthouse against production
  *   BENCH_URL=https://… npm run bench # other base URL
@@ -18,7 +18,7 @@ import lighthouse from "lighthouse";
 import desktopConfig from "lighthouse/core/config/desktop-config.js";
 
 const root = path.resolve(import.meta.dirname, "..");
-const outFile = path.join(root, "src/data/benchmark.json");
+const outFile = path.join(root, "src/_modules/server/benchmark/benchmark.json");
 const baseUrl = (process.env.BENCH_URL ?? "https://tony-portfolio-seven.vercel.app").replace(/\/$/, "");
 const runs = Number(process.env.BENCH_RUNS ?? 3);
 const PAGES = ["/", "/fullstack", "/mobile"];

@@ -1,10 +1,10 @@
-import { fullstack } from "@/content";
-import { ogSize, renderOg } from "@/lib/og";
+import { OG_SIZE, renderOg } from '@/_modules/server/og/renderOg';
+import { fullstackMock } from '@/_modules/server/content';
 
-export const alt = fullstack.meta.title;
-export const size = ogSize;
-export const contentType = "image/png";
+export const alt = fullstackMock.meta.title;
+export const size = OG_SIZE;
+export const contentType = 'image/png';
 
 export default function Image() {
-  return renderOg(fullstack);
+  return renderOg(fullstackMock);
 }

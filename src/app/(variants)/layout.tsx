@@ -1,12 +1,5 @@
-import { SectionRail } from "@/components/SectionRail";
-import { SECTION_NAV, SiteHeader } from "@/components/SiteHeader";
+import VariantsLayout from '@/_modules/layouts/VariantsLayout';
 
-export default function VariantsLayout({ children }: LayoutProps<"/">) {
-  return (
-    <>
-      <SiteHeader />
-      <SectionRail items={SECTION_NAV} />
-      {children}
-    </>
-  );
+export default function Layout({ children }: LayoutProps<'/'>) {
+  return <VariantsLayout>{children}</VariantsLayout>;
 }

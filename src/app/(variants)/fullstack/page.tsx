@@ -1,19 +1,20 @@
-import type { Metadata } from "next";
-import { Portfolio } from "@/components/Portfolio";
-import { fullstack } from "@/content";
+import type { Metadata } from 'next';
+
+import PortfolioScreen from '@/_modules/pages/Portfolio/PortfolioScreen';
+import { fullstackMock } from '@/_modules/server/content';
 
 export const metadata: Metadata = {
-  title: fullstack.meta.title,
-  description: fullstack.meta.description,
-  alternates: { canonical: "/fullstack" },
+  title: fullstackMock.meta.title,
+  description: fullstackMock.meta.description,
+  alternates: { canonical: '/fullstack' },
   openGraph: {
-    title: fullstack.meta.title,
-    description: fullstack.meta.description,
-    url: "/fullstack",
+    title: fullstackMock.meta.title,
+    description: fullstackMock.meta.description,
+    url: '/fullstack',
   },
-  twitter: { title: fullstack.meta.title, description: fullstack.meta.description },
+  twitter: { title: fullstackMock.meta.title, description: fullstackMock.meta.description },
 };
 
 export default function Page() {
-  return <Portfolio content={fullstack} />;
+  return <PortfolioScreen content={fullstackMock} />;
 }

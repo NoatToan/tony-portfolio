@@ -1,19 +1,20 @@
-import type { Metadata } from "next";
-import { Portfolio } from "@/components/Portfolio";
-import { mobile } from "@/content";
+import type { Metadata } from 'next';
+
+import PortfolioScreen from '@/_modules/pages/Portfolio/PortfolioScreen';
+import { mobileMock } from '@/_modules/server/content';
 
 export const metadata: Metadata = {
-  title: mobile.meta.title,
-  description: mobile.meta.description,
-  alternates: { canonical: "/mobile" },
+  title: mobileMock.meta.title,
+  description: mobileMock.meta.description,
+  alternates: { canonical: '/mobile' },
   openGraph: {
-    title: mobile.meta.title,
-    description: mobile.meta.description,
-    url: "/mobile",
+    title: mobileMock.meta.title,
+    description: mobileMock.meta.description,
+    url: '/mobile',
   },
-  twitter: { title: mobile.meta.title, description: mobile.meta.description },
+  twitter: { title: mobileMock.meta.title, description: mobileMock.meta.description },
 };
 
 export default function Page() {
-  return <Portfolio content={mobile} />;
+  return <PortfolioScreen content={mobileMock} />;
 }
