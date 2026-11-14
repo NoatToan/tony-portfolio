@@ -7,9 +7,10 @@ import { cx } from '@/_modules/common/utils/utilsClassNames';
 import BaseIcon from './BaseIcon';
 
 /**
- * Official brand mark for one `ETechKey`, monochrome by default and brand-coloured on hover via
- * a per-item CSS variable (docs/DECISIONS.md "Stack icon section"). `null` when the registry has
- * no artwork — callers render the text-only fallback instead.
+ * Official brand mark for one `ETechKey`, always in its brand colour via a per-item CSS variable;
+ * near-black brands use the foreground token so they stay visible in dark mode
+ * (docs/DECISIONS.md "Stack icon section"). `null` when the registry has no artwork — callers
+ * render the text-only fallback instead.
  */
 export default function BaseTechIcon({
   techKey,
@@ -31,10 +32,8 @@ export default function BaseTechIcon({
       style={style}
       className={cx(
         className,
-        'shrink-0 text-subtle transition-colors duration-200 ease-out',
-        entry.darkBrand
-          ? 'group-hover:text-fg'
-          : 'group-hover:text-[color:var(--tech-hex)]',
+        'shrink-0',
+        !entry.hex ? 'text-fg' : entry.darkBrand ? 'tech-icon-dark-brand' : 'text-[color:var(--tech-hex)]',
       )}
     />
   );

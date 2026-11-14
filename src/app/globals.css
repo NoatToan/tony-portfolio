@@ -219,3 +219,17 @@ section[tabindex="-1"]:focus {
     animation-duration: 0.01ms !important;
   }
 }
+
+/* Tech icons: near-black brand marks keep their brand colour in light mode and switch to the
+   foreground token in dark mode, where they would disappear (docs/DECISIONS.md "Stack icon section"). */
+.tech-icon-dark-brand {
+  color: var(--tech-hex);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .tech-icon-dark-brand {
+    color: var(--fg);
+  }
+}
+:root[data-theme="dark"] .tech-icon-dark-brand {
+  color: var(--fg);
+}
