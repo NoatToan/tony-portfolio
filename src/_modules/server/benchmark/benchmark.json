@@ -1,5 +1,5 @@
 {
-  "measuredAt": "2026-11-14T08:40:26.671Z",
+  "measuredAt": "2026-11-14T09:43:59.421Z",
   "baseUrl": "https://tony-portfolio-seven.vercel.app",
   "lighthouseVersion": "13.6.0",
   "runsPerPage": 3,
@@ -15,11 +15,11 @@
         "seo": 100
       },
       "metrics": {
-        "fcp": 1222.7735,
-        "lcp": 1222.7735,
-        "tbt": 76,
+        "fcp": 976.136,
+        "lcp": 976.136,
+        "tbt": 8.5,
         "cls": 0,
-        "si": 2115.175620836946
+        "si": 1027.4981640003932
       }
     },
     {
@@ -33,11 +33,11 @@
         "seo": 100
       },
       "metrics": {
-        "fcp": 288.4506,
-        "lcp": 288.4506,
+        "fcp": 289.093,
+        "lcp": 289.093,
         "tbt": 0,
         "cls": 0,
-        "si": 288.4506
+        "si": 289.093
       }
     },
     {
@@ -51,11 +51,11 @@
         "seo": 100
       },
       "metrics": {
-        "fcp": 1171.6824000000001,
-        "lcp": 1171.6824000000001,
-        "tbt": 4,
+        "fcp": 1129.1815000000001,
+        "lcp": 1129.1815000000001,
+        "tbt": 9.5,
         "cls": 0,
-        "si": 1460.8725740000855
+        "si": 1129.1815000000001
       }
     },
     {
@@ -69,11 +69,11 @@
         "seo": 100
       },
       "metrics": {
-        "fcp": 330.4013,
-        "lcp": 330.4013,
+        "fcp": 336.4154,
+        "lcp": 336.4154,
         "tbt": 0,
         "cls": 0,
-        "si": 330.4013
+        "si": 336.4154
       }
     },
     {
@@ -87,11 +87,11 @@
         "seo": 100
       },
       "metrics": {
-        "fcp": 1141.3721,
-        "lcp": 1141.3721,
-        "tbt": 12,
+        "fcp": 1111.5162,
+        "lcp": 1111.5162,
+        "tbt": 4.5,
         "cls": 0,
-        "si": 1454.438081999887
+        "si": 1111.5162
       }
     },
     {
@@ -105,35 +105,35 @@
         "seo": 100
       },
       "metrics": {
-        "fcp": 329.2382,
-        "lcp": 329.2382,
+        "fcp": 329.35720000000003,
+        "lcp": 329.35720000000003,
         "tbt": 0,
         "cls": 0,
-        "si": 329.2382
+        "si": 329.35720000000003
       }
     }
   ],
   "build": {
-    "measuredAt": "2026-11-14T08:38:26.910Z",
+    "measuredAt": "2026-11-14T09:42:03.862Z",
     "nextVersion": "16.4.6",
     "routes": [
       {
         "path": "/",
-        "firstLoadJsGzip": 254464,
-        "firstLoadJsRaw": 801246,
-        "files": 13
+        "firstLoadJsGzip": 237089,
+        "firstLoadJsRaw": 747485,
+        "files": 12
       },
       {
         "path": "/fullstack",
-        "firstLoadJsGzip": 270684,
-        "firstLoadJsRaw": 843691,
-        "files": 16
+        "firstLoadJsGzip": 253896,
+        "firstLoadJsRaw": 791368,
+        "files": 15
       },
       {
         "path": "/mobile",
-        "firstLoadJsGzip": 270684,
-        "firstLoadJsRaw": 843691,
-        "files": 16
+        "firstLoadJsGzip": 253896,
+        "firstLoadJsRaw": 791368,
+        "files": 15
       }
     ]
   }
