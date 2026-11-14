@@ -1,0 +1,221 @@
+@import "tailwindcss";
+
+/*
+ * Fluid, pixel-perfect scale.
+ * Every size in the UI is rem. The root font-size follows the viewport so the
+ * whole layout scales proportionally:
+ *   --scale = clamp(0.7, viewport / design-base, 1)
+ *   design base: 390px below 768px (mobile), 1440px from 768px (desktop)
+ * At the design width the scale is exactly 1 (1rem = 16px at default browser
+ * settings); it never drops below 0.7 and never exceeds 1. The root size is a
+ * percentage, so the user's browser font-size preference still applies.
+ * tan(atan2(a, b)) turns the length ratio into a unitless number; browsers
+ * without CSS trig functions use the vw fallback (exact at the default 16px).
+ * Guards: body text >= 14px, labels >= 12px, hit targets >= 44px (tokens below).
+ * Breakpoints stay in px, and media queries ignore the root font-size anyway.
+ */
+:root {
+  --scale-base: 390px;
+  --scale-min: 0.7;
+  --scale: clamp(var(--scale-min), tan(atan2(100vw, var(--scale-base))), 1);
+}
+@media (min-width: 768px) {
+  :root {
+    --scale-base: 1440px;
+  }
+}
+html {
+  font-size: clamp(70%, 4.1026vw, 100%);
+  font-size: calc(100% * var(--scale));
+}
+@media (min-width: 768px) {
+  html {
+    font-size: clamp(70%, 1.1111vw, 100%);
+    font-size: calc(100% * var(--scale));
+  }
+}
+
+@theme {
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* Legibility floors at small scales. */
+  --text-2xs: max(12px, 0.6875rem);
+  --text-2xs--line-height: 1.4;
+  --text-xs: max(12px, 0.75rem);
+  --text-sm: max(14px, 0.875rem);
+  --text-base: max(14px, 1rem);
+  --text-lg: max(16px, 1.125rem); /* lead text stays above body size */
+
+  /* Minimum interactive target. */
+  --spacing-hit: max(44px, 2.75rem);
+}
+
+/* Design tokens: monochrome + one accent. Light is the default; dark follows the
+   system preference unless the user picked a theme (data-theme on <html>). */
+:root {
+  --bg: #fafafa;
+  --fg: #171717;
+  --muted: #525252;
+  --subtle: #737373;
+  --border: #e5e5e5;
+  --card: #ffffff;
+  --accent: #0f766e;
+  --accent-soft: rgb(15 118 110 / 0.08);
+  --outline: rgb(0 0 0 / 0.08);
+  --good: #15803d;
+  --ok: #b45309;
+  --poor: #b91c1c;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0a0a0a;
+    --fg: #ededed;
+    --muted: #a3a3a3;
+    --subtle: #8a8a8a;
+    --border: #262626;
+    --card: #111111;
+    --accent: #2dd4bf;
+    --accent-soft: rgb(45 212 191 / 0.1);
+    --outline: rgb(255 255 255 / 0.1);
+    --good: #4ade80;
+    --ok: #fbbf24;
+    --poor: #f87171;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #0a0a0a;
+  --fg: #ededed;
+  --muted: #a3a3a3;
+  --subtle: #8a8a8a;
+  --border: #262626;
+  --card: #111111;
+  --accent: #2dd4bf;
+  --accent-soft: rgb(45 212 191 / 0.1);
+  --outline: rgb(255 255 255 / 0.1);
+  --good: #4ade80;
+  --ok: #fbbf24;
+  --poor: #f87171;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-subtle: var(--subtle);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-outline: var(--outline);
+  --color-good: var(--good);
+  --color-ok: var(--ok);
+  --color-poor: var(--poor);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-size: max(14px, 1rem);
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+body {
+  transition-property: background-color, color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
+
+/* Theme icon cross-fade (opacity + scale + blur), driven by data-theme. */
+.theme-icon {
+  transition-property: opacity, transform, filter;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+.theme-icon-sun,
+:root[data-theme="dark"] .theme-icon-moon {
+  opacity: 0;
+  transform: scale(0.6) rotate(-30deg);
+  filter: blur(2px);
+}
+:root[data-theme="dark"] .theme-icon-sun {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+/* Full-stack signature: live status dot on the current role. */
+@keyframes live-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.55;
+  }
+  80%,
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+.live-dot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: currentColor;
+  animation: live-pulse 2s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+/* Sections receive programmatic focus from the section nav; no ring needed. */
+section[tabindex="-1"]:focus {
+  outline: none;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .live-dot::after {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

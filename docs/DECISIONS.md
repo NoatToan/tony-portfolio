@@ -1,0 +1,20 @@
+# Portfolio — Decisions
+
+## 2026-11-14
+
+- **Stack**: Next.js App Router + TypeScript + Tailwind, deployed on Vercel (account `noattoan`). One codebase, two variants: `/fullstack` (Node.js BE + React/Next FE) and `/mobile` (React Native + Flutter). Content lives in typed data files (`src/content/*.ts`).
+- **Content**: mock data + mock images first (local SVG/PNG in `public/images/`, avatar = monogram). Real data from the Drive scan (`docs/drive-scan-notes.md`) gets swapped in after the UI review.
+- **Performance**: Server Components by default, static/edge rendering, next/font + next/image, no theme flash, target Lighthouse 100 on every page.
+- **Benchmark on the site**: only real, measured numbers. Lighthouse scores come from `npm run bench` against prod and are saved to `src/data/benchmark.json` with a timestamp and URL. A live Web Vitals widget shows the visitor's own metrics, alongside Vercel Speed Insights. Never hardcode scores.
+- **Motion** (from ECC skills motion-foundations, motion-patterns and make-interfaces-feel-better):
+  - CSS transitions for interaction states.
+  - `motion/react` only for the hero stagger, scroll reveal and the nav underline (`layoutId`).
+  - 150–400ms, ease-out, no bounce. Reduced motion is respected and SSR-safe.
+  - Skipped `motion-advanced` (too heavy for minimalism) and `taste` (it is for video work).
+- **Signature details**: Fullstack has a pulsing "live" dot on the current role. Mobile has phone-frame screenshots that tilt slightly on hover.
+- **Privacy**: salary expectations from the CVs never appear on the site. Client/brand names wait for the user's confirmation.
+- **Domains + Tech Stack sections** (added 2026-11-14): data-driven (`domains[]`, `techStack[]`), mock first. Domains = ERP, EC, CRM, automation integrations (Slack/Asana/ClickUp/Jira), AI harness for code automation. Tech Stack = grouped capabilities with a "what I did" line (multi-tenancy, RevenueCat subscriptions, Firebase services, plus per-variant groups). Order: Hero → About → Experience → Projects → Domains → Tech Stack → Performance → Contact. Skills merged into Tech Stack if they overlap.
+- **Clients section** (added 2026-11-14): `clients[]` (name, logo, industry, country, engagement, relatedProject). Mock uses fictional names and monochrome SVG logos only; real client names are shown only after the user confirms. Summary line is computed from data. Order: Hero → About → Experience → Clients → Projects → Domains → Tech Stack → Performance → Contact.
+- **Repo + CI/CD** (added 2026-11-14): own repo `NoatToan/tony-portfolio` (private by default, can flip to public later; `cv/` is already ignored by the parent repo). Commits authored as truongtoanlvc@gmail.com. GitHub Actions (`.github/workflows/ci-deploy.yml`): lint + tsc + build on every PR and push. A PR deploys a Vercel preview; a push to `main` deploys prod via `vercel build/deploy --prebuilt`, then smoke-tests /, /fullstack, /mobile, /benchmark. Secrets: VERCEL_ORG_ID and VERCEL_PROJECT_ID are set; VERCEL_TOKEN must be added by the user. `docs/drive-scan-notes.md` is gitignored (personal/salary data). Workflow: code and review locally, then push, and Actions deploys.
+- **Section navigation** (added 2026-11-14): no section tabs in the top bar. Desktop (≥1024px) gets a fixed right-side rail with ticks + labels; the active section comes from IntersectionObserver, and a vertical progress fill + "NN%" counter is driven by scroll (transform-only). Mobile gets a 2px top progress bar. The top bar keeps only the monogram, the Fullstack/Mobile switch and the theme toggle. Links are plain anchors and work without JS.
+- **Rem fluid scaling** (added 2026-11-14): pixel-perfect at the design bases (mobile 390px under 768px, desktop 1440px from 768px). Root `font-size = 100% × clamp(0.7, vw/base, 1)`: CSS only, keeps the user's font preference. Everything is in rem except hairlines, the progress bar, focus offsets and breakpoints. Legibility floors: body ≥14px, captions ≥12px; hit targets ≥44px.

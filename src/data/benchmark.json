@@ -1,0 +1,140 @@
+{
+  "measuredAt": "2026-11-14T05:52:26.521Z",
+  "baseUrl": "https://tony-portfolio-seven.vercel.app",
+  "lighthouseVersion": "13.6.0",
+  "runsPerPage": 3,
+  "pages": [
+    {
+      "path": "/",
+      "url": "https://tony-portfolio-seven.vercel.app/",
+      "formFactor": "mobile",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 1205.4465,
+        "lcp": 1205.4465,
+        "tbt": 45.5,
+        "cls": 0,
+        "si": 1205.4465
+      }
+    },
+    {
+      "path": "/",
+      "url": "https://tony-portfolio-seven.vercel.app/",
+      "formFactor": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 289.05240000000003,
+        "lcp": 289.05240000000003,
+        "tbt": 0,
+        "cls": 0,
+        "si": 289.05240000000003
+      }
+    },
+    {
+      "path": "/fullstack",
+      "url": "https://tony-portfolio-seven.vercel.app/fullstack",
+      "formFactor": "mobile",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 996.9264000000001,
+        "lcp": 996.9264000000001,
+        "tbt": 1.5,
+        "cls": 0,
+        "si": 996.9264000000001
+      }
+    },
+    {
+      "path": "/fullstack",
+      "url": "https://tony-portfolio-seven.vercel.app/fullstack",
+      "formFactor": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 299.0133,
+        "lcp": 299.0133,
+        "tbt": 0,
+        "cls": 0,
+        "si": 299.0133
+      }
+    },
+    {
+      "path": "/mobile",
+      "url": "https://tony-portfolio-seven.vercel.app/mobile",
+      "formFactor": "mobile",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 987.802,
+        "lcp": 987.802,
+        "tbt": 2.5,
+        "cls": 0,
+        "si": 987.802
+      }
+    },
+    {
+      "path": "/mobile",
+      "url": "https://tony-portfolio-seven.vercel.app/mobile",
+      "formFactor": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 291.8781,
+        "lcp": 291.8781,
+        "tbt": 0,
+        "cls": 0,
+        "si": 291.8781
+      }
+    }
+  ],
+  "build": {
+    "measuredAt": "2026-11-14T05:50:31.340Z",
+    "nextVersion": "16.4.6",
+    "routes": [
+      {
+        "path": "/",
+        "firstLoadJsGzip": 234636,
+        "firstLoadJsRaw": 742753,
+        "files": 11
+      },
+      {
+        "path": "/fullstack",
+        "firstLoadJsGzip": 249425,
+        "firstLoadJsRaw": 783172,
+        "files": 12
+      },
+      {
+        "path": "/mobile",
+        "firstLoadJsGzip": 249425,
+        "firstLoadJsRaw": 783172,
+        "files": 12
+      }
+    ]
+  }
+}
