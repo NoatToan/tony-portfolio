@@ -80,6 +80,9 @@ export const en = {
     openImage: 'Open full-size screenshot of {{name}}',
     linkFor: 'for {{name}}',
     stack: '{{name}} stack',
+    appIcon: '{{name}} app icon',
+    coverImage: '{{name}} store listing cover image',
+    appsIn: 'Apps in {{name}}',
   },
   experience: {
     stack: 'Stack at {{company}}',

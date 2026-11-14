@@ -57,6 +57,17 @@ export const zProjectLink = z.object({
 
 export const zProjectImage = zImageAsset.extend({ kind: z.nativeEnum(EImageKind) });
 
+/** One published app inside a project that ships multiple store listings (see storeAssets.ts). */
+export const zProjectApp = z.object({
+  slug: z.string(),
+  label: z.string().optional(),
+});
+
+export const zProjectStoreLinks = z.object({
+  appStore: z.url().nullable().optional(),
+  playStore: z.url().nullable().optional(),
+});
+
 export const zProject = z.object({
   name: z.string(),
   description: z.string(),
@@ -65,6 +76,14 @@ export const zProject = z.object({
   stack: z.array(z.nativeEnum(ETechKey)),
   links: z.array(zProjectLink),
   image: zProjectImage.optional(),
+  /** Key into storeAssets.json for a single-app project (icon, screenshots, store links). */
+  slug: z.string().optional(),
+  /** Manual override/fallback when storeAssets.json has no entry, or isn't ready yet. */
+  storeLinks: zProjectStoreLinks.optional(),
+  /** Manual override/fallback screenshot paths, used the same way as `storeLinks`. */
+  gallery: z.array(z.string()).optional(),
+  /** Multiple published apps under one project (e.g. a suite, or a user/admin pair). */
+  apps: z.array(zProjectApp).optional(),
 });
 
 export const zDomain = z.object({
@@ -93,6 +112,8 @@ export const zTechCategoryGroup = z.object({
 export const zClient = z.object({
   name: z.string(),
   logo: z.string().optional(),
+  /** Key into storeAssets.json, used for the logo when `logo` isn't set directly. */
+  slug: z.string().optional(),
   industry: z.string(),
   country: z.string().optional(),
   engagement: z.string(),
@@ -140,6 +161,8 @@ export type SocialLink = z.infer<typeof zSocialLink>;
 export type Profile = z.infer<typeof zProfile>;
 export type Experience = z.infer<typeof zExperience>;
 export type ProjectLink = z.infer<typeof zProjectLink>;
+export type ProjectApp = z.infer<typeof zProjectApp>;
+export type ProjectStoreLinks = z.infer<typeof zProjectStoreLinks>;
 export type Project = z.infer<typeof zProject>;
 export type Domain = z.infer<typeof zDomain>;
 export type TechItem = z.infer<typeof zTechItem>;

@@ -1,9 +1,11 @@
 import {
+  siAlgolia,
   siAppstore,
   siBluetooth,
   siClaude,
   siClickup,
   siAsana,
+  siCursor,
   siDart,
   siDocker,
   siExpo,
@@ -20,6 +22,7 @@ import {
   siJavascript,
   siJira,
   siKotlin,
+  siLaravel,
   siMeta,
   siMongodb,
   siMysql,
@@ -29,6 +32,7 @@ import {
   siNodedotjs,
   siOpenapiinitiative,
   siOpenjsfoundation,
+  siPhp,
   siPostgresql,
   siPrisma,
   siReact,
@@ -152,6 +156,17 @@ export const TECH_REGISTRY: Record<ETechKey, TechEntry> = {
   [ETechKey.SCRUM_ORG]: textOnly('Scrum.org'),
   [ETechKey.ETS]: textOnly('ETS'),
   [ETechKey.GITHUB]: fromSimpleIcon('GitHub', siGithub),
+  [ETechKey.PHP]: fromSimpleIcon('PHP', siPhp),
+  [ETechKey.LARAVEL]: fromSimpleIcon('Laravel', siLaravel),
+  [ETechKey.ALGOLIA]: fromSimpleIcon('Algolia', siAlgolia),
+  [ETechKey.AZURE_DEVOPS]: fromDevicon('Azure DevOps', '0078D4', DEVICON_PATHS.azuredevops),
+  [ETechKey.CURSOR]: fromSimpleIcon('Cursor', siCursor),
+  // No official mark for these React Native libraries — text-only tags.
+  [ETechKey.REANIMATED]: textOnly('Reanimated'),
+  [ETechKey.GESTURE_HANDLER]: textOnly('Gesture Handler'),
+  [ETechKey.SKIA]: textOnly('Skia'),
+  [ETechKey.DEPLOYGATE]: textOnly('DeployGate'),
+  [ETechKey.NETS_CLICK]: textOnly('NETS Click'),
 };
 
 export const techSymbolId = (key: ETechKey) => `tech-${key}`;

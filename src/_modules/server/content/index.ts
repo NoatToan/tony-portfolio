@@ -1,6 +1,6 @@
 import { fullstackMock } from './fullstackMock';
-import { mobileMock } from './mobileMock';
+import { mobileContent } from './mobileContent';
 
-export const variants = [fullstackMock, mobileMock] as const;
-export { fullstackMock, mobileMock };
+export const variants = [fullstackMock, mobileContent] as const;
+export { fullstackMock, mobileContent };
 export type { PortfolioContent } from './schemas';

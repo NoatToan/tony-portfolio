@@ -5,24 +5,32 @@ import Box from '@/_modules/common/components/Box';
 import TextPrimary from '@/_modules/common/components/TextPrimary';
 import { ESectionId } from '@/_modules/config/enums';
 import { SECTION_ORDER } from '@/_modules/config/sectionOrder';
-import { joinWith } from '@/_modules/common/utils/utilsString';
+import { isRasterImage, joinWith } from '@/_modules/common/utils/utilsString';
 import { t } from '@/_modules/i18next/i18n';
 import type { Client } from '@/_modules/server/content/schemas';
+import { getStoreAsset } from '@/_modules/server/content/storeAssets';
 
 import SectionShell from './SectionShell';
 
 function ClientTile({ client }: { client: Client }) {
+  // Real app icons (square) share this tile with the old wordmark mocks (landscape). The box is
+  // a *fixed* size (never `w-auto`) so it can't change when the image decodes — a CSS `auto` size
+  // resolves from the real decoded pixels, not the width/height attributes, so a wordmark's 320×56
+  // hint would be replaced by a square icon's real 1:1 ratio post-load and shift the layout
+  // (web.dev CLS; ai/shared-fe/10 §3). `object-contain` letterboxes either shape without stretching.
+  const logo = client.logo ?? getStoreAsset(client.slug)?.icon;
   const body = (
     <>
-      {client.logo ? (
+      {logo ? (
         <BaseImage
-          src={client.logo}
+          src={logo}
           alt={t('clients.logo', { name: client.name })}
           width={320}
           height={56}
-          sizes="160px"
+          sizes="80px"
           fallbackLabel={t('common.imageUnavailable')}
-          className="h-8 w-auto max-w-full opacity-70 grayscale transition-[filter,opacity] duration-200 ease-out group-hover:opacity-100 group-hover:grayscale-0"
+          unoptimized={!isRasterImage(logo)}
+          className="h-8 w-20 max-w-full object-contain opacity-70 grayscale transition-[filter,opacity] duration-200 ease-out group-hover:opacity-100 group-hover:grayscale-0"
         />
       ) : (
         <BaseMonogram label={client.name} className="size-8" />

@@ -1,0 +1,419 @@
+{
+  "breadtalk": {
+    "name": "BreadTalk Group Rewards",
+    "developer": "BreadTalk Pte Ltd",
+    "appStoreUrl": "https://apps.apple.com/sg/app/breadtalk-group-rewards/id1294231025",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.breadtalk.rewards",
+    "icon": "/images/projects/breadtalk/icon.webp",
+    "featureGraphic": "/images/projects/breadtalk/feature.webp",
+    "screenshots": [
+      "/images/projects/breadtalk/shot-01.webp",
+      "/images/projects/breadtalk/shot-02.webp",
+      "/images/projects/breadtalk/shot-03.webp",
+      "/images/projects/breadtalk/shot-04.webp",
+      "/images/projects/breadtalk/shot-05.webp",
+      "/images/projects/breadtalk/shot-06.webp"
+    ],
+    "shortDescription": "Scrumptious Savings & Savoury Rewards start here!",
+    "category": "Food & Drink",
+    "countries": [
+      "SG"
+    ],
+    "found": true,
+    "notes": "Exact name/developer match for the hint (BreadTalk Group, 150+ outlets incl. Din Tai Fung, Toast Box). High confidence."
+  },
+  "snapstudy": {
+    "name": "SnapStudy.ai",
+    "developer": "SnapStudy.ai Inc. (Android) / \"wener erasmus\" (iOS listing account)",
+    "appStoreUrl": "https://apps.apple.com/us/app/snapstudy-ai/id6760646897",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.snapstudy_android",
+    "icon": "/images/projects/snapstudy/icon.webp",
+    "featureGraphic": "/images/projects/snapstudy/feature.webp",
+    "screenshots": [
+      "/images/projects/snapstudy/shot-01.webp",
+      "/images/projects/snapstudy/shot-02.webp",
+      "/images/projects/snapstudy/shot-03.webp",
+      "/images/projects/snapstudy/shot-04.webp",
+      "/images/projects/snapstudy/shot-05.webp"
+    ],
+    "shortDescription": "SnapStudy AI turns your notes, textbooks, and handouts into powerful study tools instantly.",
+    "category": "Education",
+    "countries": [
+      "US",
+      "Global"
+    ],
+    "found": true,
+    "notes": "Medium-high confidence: description (snap a photo of study material -> AI flashcards/summaries/quizzes) matches the \"AI homework helper, snapstudy.ai\" hint, and the Android listing's developer account is literally \"SnapStudy.ai Inc.\" which matches the branded domain. However the iOS App Store listing for the same app name is published under a personal-sounding developer account (\"wener erasmus\") rather than a company name -- common for solo/indie publishing but worth the user double-checking it is their app before using the iOS link publicly. An older cached web result pointed to a different id (6479581433) that no longer resolves via the iTunes API (likely delisted/replaced)."
+  },
+  "koithe": {
+    "name": "KOI Thé SG",
+    "developer": "KOI THE SINGAPORE PTE LTD",
+    "appStoreUrl": "https://apps.apple.com/sg/app/koi-th%C3%A9-sg/id6748009365",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.thekoi.sg",
+    "icon": "/images/projects/koithe/icon.webp",
+    "featureGraphic": "/images/projects/koithe/feature.webp",
+    "screenshots": [
+      "/images/projects/koithe/shot-01.webp",
+      "/images/projects/koithe/shot-02.webp",
+      "/images/projects/koithe/shot-03.webp",
+      "/images/projects/koithe/shot-04.webp"
+    ],
+    "shortDescription": "Our new and improved mobile ordering app, allowing you to seamlessly place drink orders, including merchandise and sweet treats.",
+    "category": "Food & Drink",
+    "countries": [
+      "SG"
+    ],
+    "found": true,
+    "notes": "High confidence: exact Singapore KOI The bubble-tea rewards/ordering app. (Separate KOI The Vietnam / Malaysia / Cambodia apps exist from the same chain's regional entities but were not used.) Google Play package is com.thekoi.sg (com.koi.sg 404s). Only 4 unique screenshots were available after de-duplicating Google Play's repeated phone/tablet sets."
+  },
+  "telemax": {
+    "name": "Telemax Connect",
+    "developer": "Telemax Telematics Pty Ltd",
+    "appStoreUrl": "https://apps.apple.com/au/app/telemax-connect/id6754005435",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=au.com.telemax.mobile",
+    "icon": "/images/projects/telemax/icon.webp",
+    "featureGraphic": "/images/projects/telemax/feature.webp",
+    "screenshots": [
+      "/images/projects/telemax/shot-01.webp",
+      "/images/projects/telemax/shot-02.webp",
+      "/images/projects/telemax/shot-03.webp",
+      "/images/projects/telemax/shot-04.webp",
+      "/images/projects/telemax/shot-05.webp",
+      "/images/projects/telemax/shot-06.webp"
+    ],
+    "shortDescription": "Telemax GPS helps rental and subscription car operators onboard, swap, and monitor vehicles fast.",
+    "category": "Business",
+    "countries": [
+      "AU"
+    ],
+    "found": true,
+    "notes": "Exact name + publisher match for the hint (Telemax Telematics Pty Ltd, AU fleet telematics). Google Play only exposed 2 unique screenshots after de-duplication (the store listing repeats the same 2 images for phone/7in/10in device buckets); shot-03..06 are therefore the same 2 images repeated to fill out to 6 files is NOT done -- only 2 files (shot-01, shot-02) were produced because no more unique images exist."
+  },
+  "sega-sammy-user": {
+    "name": "【ポーカー】m HOLD'EM (エムホールデム)",
+    "developer": "Sammy Corporation (SEGA SAMMY Holdings group)",
+    "appStoreUrl": "https://apps.apple.com/jp/app/%E3%83%9D%E3%83%BC%E3%82%AB%E3%83%BC-%EF%BD%8Dholdem-%E3%82%A8%E3%83%A0%E3%83%9B%E3%83%BC%E3%83%AB%E3%83%87%E3%83%A0-poker/id1526785271",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=jp.co.sammy.mholdem",
+    "icon": "/images/projects/sega-sammy-user/icon.webp",
+    "featureGraphic": "/images/projects/sega-sammy-user/feature.webp",
+    "screenshots": [
+      "/images/projects/sega-sammy-user/shot-01.webp",
+      "/images/projects/sega-sammy-user/shot-02.webp",
+      "/images/projects/sega-sammy-user/shot-03.webp",
+      "/images/projects/sega-sammy-user/shot-04.webp",
+      "/images/projects/sega-sammy-user/shot-05.webp",
+      "/images/projects/sega-sammy-user/shot-06.webp"
+    ],
+    "shortDescription": "A mind-sport Texas Hold'em poker app; an m HOLD'EM Club lets leaders host rooms and invite members to play.",
+    "category": "Games",
+    "countries": [
+      "JP"
+    ],
+    "found": true,
+    "notes": "This is the consumer/player-facing poker app, published by Sammy Corporation, one of the two founding companies of SEGA SAMMY Holdings -- not literally named \"Sega Sammy Poker Club\", but it is the real, branded poker-club product from the SEGA SAMMY group (the in-app club feature is called \"m HOLD'EM Club\"). No separate staff/admin companion app from this publisher was found -- see sega-sammy-admin entry. If this is not the exact app the user built, treat as unverified."
+  },
+  "sega-sammy-admin": {
+    "name": "",
+    "developer": "",
+    "appStoreUrl": null,
+    "playStoreUrl": null,
+    "icon": "",
+    "featureGraphic": null,
+    "screenshots": [],
+    "shortDescription": "",
+    "category": "",
+    "countries": [],
+    "found": false,
+    "notes": "Not found. Searched App Store/Google Play (country jp) for a staff/club-management counterpart to the SEGA SAMMY poker app, including terms \"ポーカークラブ\", \"SEGA SAMMY POKER\", and developer names containing \"セガサミー\"/\"SEGA SAMMY\"/\"Sammy\". Sammy Corporation (publisher of the user app, see sega-sammy-user) has no second poker-club admin/management app under its developer account on either store. The only \"club management\" style poker app found was \"Poker Club - ポーカー店舗のサポートシステム\" (id1147080279) by a completely unrelated company, SunVy Co., Ltd. -- not SEGA SAMMY, so not used. Could not locate a genuine SEGA SAMMY-published admin app; please provide the exact store listing name/URL if one exists."
+  },
+  "klv": {
+    "name": "",
+    "developer": "",
+    "appStoreUrl": null,
+    "playStoreUrl": null,
+    "icon": "",
+    "featureGraphic": null,
+    "screenshots": [],
+    "shortDescription": "",
+    "category": "",
+    "countries": [],
+    "found": false,
+    "notes": "Not found. Searched App Store (country sg, multiple spellings) and Google Play for a Singapore loyalty app named \"KLV\" -- all direct hits were unrelated (German KLV insurance/learning apps, the ASX-listed \"Klevo Rewards\" fintech ticker KLV, and a Vietnam mall app \"IKONIC Rewards/Rewards+\" that uses klvrewardsplus@gmail.com as a contact alias but is branded and listed as \"Rewards+\", not \"KLV\"). Also checked the App Store developer pages for Ascentis Pte Ltd (Crystal Jade SG's developer) and Straits Retail Property Management Services Pte Ltd (S3 Rewards / Paragon Club's developer) for an unlisted \"KLV\" app -- neither lists one. No confident match; please confirm the exact store name or provide the URL."
+  },
+  "great-rewards": {
+    "name": "Great Rewards SG",
+    "developer": "GWC COMMERCIAL PTE. LTD.",
+    "appStoreUrl": "https://apps.apple.com/sg/app/great-rewards-sg/id1535765536",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.shangrila.greatrewards",
+    "icon": "/images/projects/great-rewards/icon.webp",
+    "featureGraphic": "/images/projects/great-rewards/feature.webp",
+    "screenshots": [
+      "/images/projects/great-rewards/shot-01.webp",
+      "/images/projects/great-rewards/shot-02.webp",
+      "/images/projects/great-rewards/shot-03.webp",
+      "/images/projects/great-rewards/shot-04.webp",
+      "/images/projects/great-rewards/shot-05.webp",
+      "/images/projects/great-rewards/shot-06.webp"
+    ],
+    "shortDescription": "Reward Yourself Every Day with Great Rewards! Earn points at Great World, Pasir Ris Mall, Tanglin Mall, and The Seletar Mall.",
+    "category": "Shopping",
+    "countries": [
+      "SG"
+    ],
+    "found": true,
+    "notes": "Good match for \"Great Rewards\" / Singapore mall loyalty app (Great World City mall group, operated by GWC Commercial Pte Ltd, a Shangri-La/Great World City affiliate -- Android package is literally com.shangrila.greatrewards). Developer account is not shared with BreadTalk/KOI/Crystal Jade, but the app name, country and loyalty-app category all match the hint precisely."
+  },
+  "lamo": {
+    "name": "",
+    "developer": "",
+    "appStoreUrl": null,
+    "playStoreUrl": null,
+    "icon": "",
+    "featureGraphic": null,
+    "screenshots": [],
+    "shortDescription": "",
+    "category": "",
+    "countries": [],
+    "found": false,
+    "notes": "Not found. Searched App Store (multiple countries) and Google Play for \"Lamo\", \"Lamo - Learn and Earn\", \"Lamo Learn & Earn\", and generic \"learn to earn\"/\"learn and earn\" crypto-education apps. No app named \"Lamo\" with an education/learn-to-earn concept exists on either store. Closest superficially-similar names found: \"ai LaMo: Learn AI & Chat GPT\" (com.ailamo.ailamo, Google Play) -- about learning AI/ChatGPT, not a learn-to-earn rewards model, and several unrelated apps named \"Lamo\" (a Vietnamese utility app, a fitness app \"LAMO Fit\", a chat app). None match the \"Learn and Earn\" branding. Please confirm the exact store listing name or URL."
+  },
+  "singapore-news": {
+    "name": "",
+    "developer": "",
+    "appStoreUrl": null,
+    "playStoreUrl": null,
+    "icon": "",
+    "featureGraphic": null,
+    "screenshots": [],
+    "shortDescription": "",
+    "category": "",
+    "countries": [],
+    "found": false,
+    "notes": "Ambiguous -- not picking one, per instructions. Multiple \"Singapore News\"-style apps exist with no obvious link to the user's other apps/developers. Top candidates: (1) \"Singapore News - SG News\" -- iOS id1588010053 (https://apps.apple.com/id/app/singapore-news-sg-news/id1588010053), Android com.healthyapps.singaporenews (https://play.google.com/store/apps/details?id=com.healthyapps.singaporenews) -- aggregates CNA/Straits Times/Today headlines; (2) \"SGNews - Singapore News\" -- iOS id1493049413 (https://apps.apple.com/to/app/sgnews-singapore-news/id1493049413), Android com.sgnews.singaporenews (https://play.google.com/store/apps/details?id=com.sgnews.singaporenews) -- developer listed variously as \"Juan Ignacio Minatta\"; (3) \"Singapore News\" -- Android com.allaboutnews.singaporenews, developer \"Creative Wolf B.V.\" (Amsterdam). None of these developers match BreadTalk/KOI/Crystal Jade/Ascentis/Straits Retail or any other confirmed developer in this set, and none looks like a Vietnamese/Singapore agency the user is known to work with. Please pick one or supply the exact URL."
+  },
+  "kiddihub": {
+    "name": "KiddiHub",
+    "developer": "KIDDIHUB EDUCATION TECHNOLOGY JOINT STOCK COMPANY",
+    "appStoreUrl": "https://apps.apple.com/vn/app/kiddihub/id6748370510",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.kiddihub",
+    "icon": "/images/projects/kiddihub/icon.webp",
+    "featureGraphic": "/images/projects/kiddihub/feature.webp",
+    "screenshots": [
+      "/images/projects/kiddihub/shot-01.webp",
+      "/images/projects/kiddihub/shot-02.webp",
+      "/images/projects/kiddihub/shot-03.webp",
+      "/images/projects/kiddihub/shot-04.webp",
+      "/images/projects/kiddihub/shot-05.webp",
+      "/images/projects/kiddihub/shot-06.webp"
+    ],
+    "shortDescription": "KiddiHub - an online communication channel between school owners and parents, for fast, convenient messaging anytime, anywhere.",
+    "category": "Education",
+    "countries": [
+      "VN",
+      "SG"
+    ],
+    "found": true,
+    "notes": "High confidence exact name match; kids/childcare communication app as hinted. A companion app \"KiddiNote\" (id6744385283) from the same developer also exists but was not used (different app)."
+  },
+  "miesgo": {
+    "name": "",
+    "developer": "",
+    "appStoreUrl": null,
+    "playStoreUrl": null,
+    "icon": "",
+    "featureGraphic": null,
+    "screenshots": [],
+    "shortDescription": "",
+    "category": "",
+    "countries": [],
+    "found": false,
+    "notes": "Not found. Searched App Store and Google Play for \"Miesgo\", \"Mies Go\", \"MiesGo\" and close variants -- no plausible candidates returned on either store; all results were unrelated apps (MIIEGO audio gear, Mijzo Go car-sharing, MexGo travel, mesoestetic events, etc.) with no name or description resemblance. Please confirm the spelling or provide the store URL."
+  },
+  "crystal-jade": {
+    "name": "Crystal Jade SG",
+    "developer": "Ascentis Pte Ltd",
+    "appStoreUrl": "https://apps.apple.com/sg/app/crystal-jade-sg/id1327757693",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.cj.crystaljade",
+    "icon": "/images/projects/crystal-jade/icon.webp",
+    "featureGraphic": "/images/projects/crystal-jade/feature.webp",
+    "screenshots": [
+      "/images/projects/crystal-jade/shot-01.webp",
+      "/images/projects/crystal-jade/shot-02.webp",
+      "/images/projects/crystal-jade/shot-03.webp",
+      "/images/projects/crystal-jade/shot-04.webp",
+      "/images/projects/crystal-jade/shot-05.webp",
+      "/images/projects/crystal-jade/shot-06.webp"
+    ],
+    "shortDescription": "Access your Crystal Jade Jadeite membership account, check JPoints balance, view transactions and e-vouchers, and make reservations.",
+    "category": "Food & Drink",
+    "countries": [
+      "SG"
+    ],
+    "found": true,
+    "notes": "High confidence: exact chain + Jadeite loyalty program match. Published by Ascentis Pte Ltd, a Singapore loyalty/retail software vendor (not a shared developer account with BreadTalk/KOI/Great Rewards -- Ascentis's own App Store catalog only lists Crystal Jade SG and one other unrelated app, \"Everbest\")."
+  },
+  "wisma-atria": {
+    "name": "Wisma Atria Rewards",
+    "developer": "YTL Starhill Global Property Management Pte. Ltd.",
+    "appStoreUrl": "https://apps.apple.com/sg/app/wisma-atria-rewards/id6443664457",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.starhill.wismaatria",
+    "icon": "/images/projects/wisma-atria/icon.webp",
+    "featureGraphic": "/images/projects/wisma-atria/feature.webp",
+    "screenshots": [
+      "/images/projects/wisma-atria/shot-01.webp",
+      "/images/projects/wisma-atria/shot-02.webp",
+      "/images/projects/wisma-atria/shot-03.webp"
+    ],
+    "shortDescription": "Indulge in endless shopping with the Wisma Atria app and earn rewards seamlessly.",
+    "category": "Shopping",
+    "countries": [
+      "SG"
+    ],
+    "found": true,
+    "notes": "High confidence exact-name match for Wisma Atria mall (Orchard Road, Singapore) rewards app. Only 3 screenshots were available on the App Store listing."
+  },
+  "s3-rewards": {
+    "name": "S3 Rewards",
+    "developer": "Straits Retail Property Management Services Pte Ltd",
+    "appStoreUrl": "https://apps.apple.com/sg/app/s3-rewards/id1586783336",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.s3.rewards",
+    "icon": "/images/projects/s3-rewards/icon.webp",
+    "featureGraphic": "/images/projects/s3-rewards/feature.webp",
+    "screenshots": [
+      "/images/projects/s3-rewards/shot-01.webp",
+      "/images/projects/s3-rewards/shot-02.webp",
+      "/images/projects/s3-rewards/shot-03.webp",
+      "/images/projects/s3-rewards/shot-04.webp",
+      "/images/projects/s3-rewards/shot-05.webp"
+    ],
+    "shortDescription": "Shop across The Clementi Mall and The Woodleigh Mall to earn and accumulate S3 Rewards points.",
+    "category": "Shopping",
+    "countries": [
+      "SG"
+    ],
+    "found": true,
+    "notes": "High confidence exact-name match. Same developer (Straits Retail Property Management Services Pte Ltd) also publishes paragon-club, confirming the shared mall-operator vendor family."
+  },
+  "tccg-rewards": {
+    "name": "TCCG Rewards+",
+    "developer": "Sarika Connoisseur Cafe Pte Ltd",
+    "appStoreUrl": "https://apps.apple.com/sg/app/tccg-rewards/id1466036575",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.pts.tcc.android",
+    "icon": "/images/projects/tccg-rewards/icon.webp",
+    "featureGraphic": "/images/projects/tccg-rewards/feature.webp",
+    "screenshots": [
+      "/images/projects/tccg-rewards/shot-01.webp",
+      "/images/projects/tccg-rewards/shot-02.webp",
+      "/images/projects/tccg-rewards/shot-03.webp",
+      "/images/projects/tccg-rewards/shot-04.webp"
+    ],
+    "shortDescription": "Enjoy exclusive deals, special privileges and promotions when you join the TCCG Rewards+ program.",
+    "category": "Food & Drink",
+    "countries": [
+      "SG"
+    ],
+    "found": true,
+    "notes": "High confidence exact-name match (The Connoisseur Concerto Group cafe/F&B rewards program, Singapore)."
+  },
+  "paragon-club": {
+    "name": "Paragon Club",
+    "developer": "Straits Retail Property Management Services Pte Ltd",
+    "appStoreUrl": "https://apps.apple.com/sg/app/paragon-club/id1481600879",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.paragon.club",
+    "icon": "/images/projects/paragon-club/icon.webp",
+    "featureGraphic": "/images/projects/paragon-club/feature.webp",
+    "screenshots": [
+      "/images/projects/paragon-club/shot-01.webp",
+      "/images/projects/paragon-club/shot-02.webp",
+      "/images/projects/paragon-club/shot-03.webp",
+      "/images/projects/paragon-club/shot-04.webp",
+      "/images/projects/paragon-club/shot-05.webp",
+      "/images/projects/paragon-club/shot-06.webp"
+    ],
+    "shortDescription": "Discover privileges beyond points. Unlock a world of privileges when you shop, spend, and earn with Paragon Club.",
+    "category": "Shopping",
+    "countries": [
+      "SG"
+    ],
+    "found": true,
+    "notes": "High confidence exact-name match for Paragon mall (Orchard Road, Singapore). Same developer as s3-rewards."
+  },
+  "rewards-plus-i12": {
+    "name": "Rewards+ (i12 Katong)",
+    "developer": "Keppel Retail & Consumer Solutions Pte Ltd / Altallo Asset Management Pte. Ltd.",
+    "appStoreUrl": "https://apps.apple.com/sg/app/rewards-i12-katong/id1590306846",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.bcxstudio.I12Katong",
+    "icon": "/images/projects/rewards-plus-i12/icon.webp",
+    "featureGraphic": "/images/projects/rewards-plus-i12/feature.webp",
+    "screenshots": [
+      "/images/projects/rewards-plus-i12/shot-01.webp",
+      "/images/projects/rewards-plus-i12/shot-02.webp",
+      "/images/projects/rewards-plus-i12/shot-03.webp",
+      "/images/projects/rewards-plus-i12/shot-04.webp",
+      "/images/projects/rewards-plus-i12/shot-05.webp"
+    ],
+    "shortDescription": "Register for a Rewards+ membership and start earning points when you shop at i12 Katong.",
+    "category": "Shopping",
+    "countries": [
+      "SG"
+    ],
+    "found": true,
+    "notes": "High confidence exact-name match for the i12 Katong mall rewards app. Note: the App Store seller is listed as \"ALTALLO ASSET MANAGEMENT PTE. LTD.\" while third-party trackers attribute the app to \"Keppel Retail & Consumer Solutions Pte Ltd\" (i12 Katong's mall manager) -- both names are recorded here since the two differ."
+  },
+  "recoup-health": {
+    "name": "",
+    "developer": "",
+    "appStoreUrl": null,
+    "playStoreUrl": null,
+    "icon": "",
+    "featureGraphic": null,
+    "screenshots": [],
+    "shortDescription": "",
+    "category": "",
+    "countries": [],
+    "found": false,
+    "notes": "Not found / likely delisted. A web search cache showed an App Store listing \"Recoup Health\" by \"RECOUP DIGITAL INC\" (combining modern medicine, Ayurveda, psychology, nutrition and functional medicine) at id6736391965, but the iTunes Lookup and Search APIs no longer return this id or app name in any country checked (au, ca, in, ng, ie, za, ee, lc, cz, my, gb, us, sg) -- it appears to have been removed from the App Store. No Google Play counterpart named \"Recoup Health\" was found either. Other \"Recoup\"-named apps exist but don't match: \"Recoup\" (post-discharge care, Posha Healthtech / com.phipl.recoup), \"Recoup Fitness Group\" (personal training, com.trainerize.recouppersonaltraining), \"Recomp Health\" (body composition tracker). Please confirm if the app has been taken down or provide an alternate URL/screenshot."
+  },
+  "carhartt": {
+    "name": "",
+    "developer": "",
+    "appStoreUrl": null,
+    "playStoreUrl": null,
+    "icon": "",
+    "featureGraphic": null,
+    "screenshots": [],
+    "shortDescription": "",
+    "category": "",
+    "countries": [],
+    "found": false,
+    "notes": "Ambiguous -- not picking one, per instructions. No clearly-matching regional/Asia retailer app found, and none share a developer with any other confirmed app in this set. Candidates found: (1) \"Carhartt WIP\" -- global official app, developer \"Work In Progress Textilhandels GmbH\" (Germany), id6449229194 (https://apps.apple.com/gb/app/carhartt-wip/id6449229194); (2) \"Carhartt WIP Japan\" -- developer \"Rakuda Design Inc.\" (Japan), id6477574884 (https://apps.apple.com/jp/app/carhartt-wip-japan/id6477574884); (3) \"CarharttSLS\" -- id1250534250 (https://apps.apple.com/us/app/carharttsls/id1250534250), developer/purpose unclear (possibly a corporate/supply-chain-specific tool rather than a consumer retail app). None of these is obviously the agency-built Singapore/Asia retailer app implied by the hint. Please confirm the exact app name/URL."
+  },
+  "clean-mail": {
+    "name": "",
+    "developer": "",
+    "appStoreUrl": null,
+    "playStoreUrl": null,
+    "icon": "",
+    "featureGraphic": null,
+    "screenshots": [],
+    "shortDescription": "",
+    "category": "",
+    "countries": [],
+    "found": false,
+    "notes": "Not found. Searched App Store and Google Play for \"Clean Mail\" as a Gmail/Outlook promotional-mail cleaner. No app with this exact name was found on either store. Closest existing products are differently named and from unrelated, established companies: \"Clean Email: Unroll & Cleanup\" (Clean Email LLC) and \"Cleanfox - Email Cleaner\" (Cleanfox/Mailvore) -- neither is named \"Clean Mail\" nor obviously tied to the user. Given no React Native/Expo indie app of this exact name surfaced, please provide the store URL if it is published, or confirm it is unreleased/not yet live."
+  },
+  "schoolhub": {
+    "name": "",
+    "developer": "",
+    "appStoreUrl": null,
+    "playStoreUrl": null,
+    "icon": "",
+    "featureGraphic": null,
+    "screenshots": [],
+    "shortDescription": "",
+    "category": "",
+    "countries": [],
+    "found": false,
+    "notes": "Ambiguous -- not picking one, per instructions. Several distinctly different \"SchoolHub\"-named apps exist; none is confirmed as a parent/school \"review\" app specifically. Top candidates: (1) \"SchoolHub App\" -- Android package schoolhub.schoolhub (https://play.google.com/store/apps/details?id=schoolhub.schoolhub) -- bus tracking, attendance notifications, homework/assignments for parents, closest fit to \"connects parents and schools\" but not framed as a review app; (2) \"Schoolhub.io\" -- iOS id6754316897 (https://apps.apple.com/cy/app/schoolhub-io/id6754316897) -- a Cyprus-first app to discover schools/nurseries/activities, which is closer to a \"review/discovery\" concept but is country-specific to Cyprus; (3) \"SchoolHub\" -- iOS id1614370502 (https://apps.apple.com/au/app/schoolhub/id1614370502), Australia. Also noted but likely unrelated: \"SchoolHub - Student\" (id6760703289) and \"SchoolHub - School Visualizer\" (id6737741331). Please confirm which listing is the user's."
+  }
+}

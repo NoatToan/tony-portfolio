@@ -22,6 +22,7 @@ export default function BaseImage({
   className,
   priority = false,
   fallbackLabel = 'Image unavailable',
+  unoptimized = true,
 }: {
   src: string;
   alt: string;
@@ -32,6 +33,13 @@ export default function BaseImage({
   priority?: boolean;
   /** Already-translated copy for the failed-image tile (ai/shared-fe/10 §3). */
   fallbackLabel?: string;
+  /**
+   * Defaults to `true` to keep the existing mock-SVG behaviour (bundled SVG/illustrative mocks
+   * gain nothing from Next's optimizer, so serving them verbatim avoids an extra request hop).
+   * Pass `false` for real raster photos (store icons, screenshots, feature graphics, client
+   * logos) so Next generates a responsive `srcset` through `/_next/image`.
+   */
+  unoptimized?: boolean;
 }) {
   const [failed, setFailed] = useState(false);
 
@@ -62,9 +70,7 @@ export default function BaseImage({
       sizes={sizes}
       loading={priority ? 'eager' : 'lazy'}
       fetchPriority={priority ? 'high' : undefined}
-      // Local, bundled SVG/illustrative mocks — not raster photos — so Next's optimizer has
-      // nothing useful to do with them; serving them verbatim avoids an extra request hop.
-      unoptimized
+      unoptimized={unoptimized}
       onError={() => setFailed(true)}
       className={cx(className)}
     />

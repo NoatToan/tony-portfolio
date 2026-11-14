@@ -21,3 +21,15 @@ export function joinWith(sep: string, ...parts: Part[]) {
 export function padIndex(value: number) {
   return String(value).padStart(2, '0');
 }
+
+const RASTER_IMAGE_EXTENSIONS = ['.webp', '.png', '.jpg', '.jpeg'];
+
+/**
+ * True for a real raster photo (downloaded store icon/screenshot); false for the bundled SVG
+ * mocks, so callers know when Next's image optimizer (`BaseImage`'s `unoptimized={false}`) is
+ * worth paying for.
+ */
+export function isRasterImage(src: string) {
+  const path = src.split(/[?#]/)[0].toLowerCase();
+  return RASTER_IMAGE_EXTENSIONS.some((ext) => path.endsWith(ext));
+}

@@ -11,6 +11,7 @@ const root = path.resolve(import.meta.dirname, '..');
 const ICONS = {
   aws: 'amazonwebservices/amazonwebservices-plain.svg',
   slack: 'slack/slack-plain.svg',
+  azuredevops: 'azuredevops/azuredevops-plain.svg',
 };
 
 const out = {};

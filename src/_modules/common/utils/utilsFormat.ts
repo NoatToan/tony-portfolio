@@ -14,8 +14,13 @@ export function scoreTone(score: number) {
   return score >= SCORE_BANDS.ok ? EScoreTone.OK : EScoreTone.POOR;
 }
 
-/** `yearMonth` is a fixed "YYYY-MM" string — deterministic on server and client. */
+/**
+ * `yearMonth` is normally a fixed "YYYY-MM" string — deterministic on server and client. A
+ * plain "YYYY" (no month) renders as-is: some source material (e.g. a CV certification) only
+ * gives the year, and inventing a month would be a fabricated detail.
+ */
 export function formatYearMonth(yearMonth: string) {
+  if (!yearMonth.includes('-')) return yearMonth;
   const [year, month] = yearMonth.split('-').map(Number);
   return new Date(Date.UTC(year, month - 1, 1)).toLocaleDateString('en-GB', {
     month: 'short',
